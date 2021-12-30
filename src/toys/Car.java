@@ -1,7 +1,6 @@
 package toys;
 
 public class Car {
-    
     private final Integer serialNumber;
     
     public Car(Integer serialNumber){

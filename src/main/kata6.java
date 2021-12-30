@@ -8,6 +8,7 @@ import toys.SerialNumberGenerator;
 public class kata6 {
 
     public static void main(String[] args) {
+        
         SerialNumberGenerator serial =  new SerialNumberGenerator();
         ArrayList<Car> cars = new ArrayList<>();
         
