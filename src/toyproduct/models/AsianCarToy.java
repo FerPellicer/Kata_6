@@ -2,17 +2,11 @@ package toyproduct.models;
 
 import toyproduct.Toy;
 
-public class Helicopter implements Toy{
+public class AsianCarToy implements Toy{
     private final Integer serialNumber;
-    final String type = "helicopter";
-    
-    /**
-     * Constructor al que se le pasa el parámetro que referencia el serial de 
-     * un helicóptero.
-     * 
-     * @param serialNumber 
-     */
-    public Helicopter(Integer serialNumber) {
+    final String type = "car";
+
+    public AsianCarToy(Integer serialNumber) {
         this.serialNumber = serialNumber;
     }
     
@@ -37,6 +31,6 @@ public class Helicopter implements Toy{
     
     @Override
     public String toString() {
-        return "HelicopterToy {" + "serialNumber = " + serialNumber + '}';
+        return "AsianCarToy {" + "serialNumber = " + serialNumber + '}';
     }
 }
