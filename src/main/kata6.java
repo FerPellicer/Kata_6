@@ -2,16 +2,14 @@ package main;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import toyproduct.Toy;
 import toys.*;
 import toys.SerialNumberGenerator;
 
 public class kata6 {
 
     public static void main(String[] args) {
-        
-        SerialNumberGenerator serial =  new SerialNumberGenerator();
-        ArrayList<Car> cars = new ArrayList<>();
-        ArrayList<Helicopter> helicopters = new ArrayList<>();
+        ArrayList<Toy> toys = new ArrayList<>();
         ToyBusiness toyBusiness = new ToyBusiness();
         
         System.out.println("Si desea construir un coche, presione car.");
@@ -25,11 +23,11 @@ public class kata6 {
             
             if (!string.equals("exit")){
                 if(string.equals("car")){
-                    cars.add(toyBusiness.createCar());
+                    toys.add(toyBusiness.createToy(string));
                     System.out.println("Producto procesado, coche");
                     System.out.println("Para salir escirba 'exit', en caso contrario continue");
                 }else if(string.equals("helicopter")){
-                    helicopters.add(toyBusiness.createHelicopter());
+                    toys.add(toyBusiness.createToy(string));
                     System.out.println("Producto procesado, helicoptero");
                     System.out.println("Para salir escirba 'exit, en caso contrario continue");
                 }else{
