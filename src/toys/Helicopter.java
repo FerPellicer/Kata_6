@@ -1,17 +1,23 @@
 package toys;
 
-public class Car {
+public class Helicopter {
     private final Integer serialNumber;
-    final String type = "car";
-
-    public Car(Integer serialNumber) {
+    final String type = "helicopter";
+    
+    /**
+     * Constructor al que se le pasa el parámetro que referencia el serial de 
+     * un helicóptero.
+     * 
+     * @param serialNumber 
+     */
+    public Helicopter(Integer serialNumber) {
         this.serialNumber = serialNumber;
     }
     
     public Integer getSerialNumber() {
         return this.serialNumber;
     }
-    
+
     public String getType() {
         return this.type;
     }
