@@ -12,6 +12,7 @@ public class kata6 {
         SerialNumberGenerator serial =  new SerialNumberGenerator();
         ArrayList<Car> cars = new ArrayList<>();
         ArrayList<Helicopter> helicopters = new ArrayList<>();
+        ToyBusiness toyBusiness = new ToyBusiness();
         
         System.out.println("Si desea construir un coche, presione car.");
         System.out.println("Si desea construir un helicoptero, escriba helicopter: ");
@@ -24,17 +25,11 @@ public class kata6 {
             
             if (!string.equals("exit")){
                 if(string.equals("car")){
-                    Car car = new Car(serial.next());
-                    car.pack();
-                    car.label();
-                    cars.add(car);
+                    cars.add(toyBusiness.createCar());
                     System.out.println("Producto procesado, coche");
                     System.out.println("Para salir escirba 'exit', en caso contrario continue");
                 }else if(string.equals("helicopter")){
-                    Helicopter helicopter = new Helicopter(serial.next());
-                    helicopter.pack();
-                    helicopter.label();
-                    helicopters.add(helicopter);
+                    helicopters.add(toyBusiness.createHelicopter());
                     System.out.println("Producto procesado, helicoptero");
                     System.out.println("Para salir escirba 'exit, en caso contrario continue");
                 }else{
