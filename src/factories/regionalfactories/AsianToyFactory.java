@@ -1,11 +1,11 @@
-package branches;
+package factories.regionalfactories;
 
-import business.ToyBusiness;
+import factories.ToyFactory;
 import toyproduct.Toy;
 import toyproduct.models.AsianCarToy;
 import toyproduct.models.AsianHelicopterToy;
 
-public class AsianToyBusiness extends ToyBusiness {
+public class AsianToyFactory extends ToyFactory {
     
     @Override
     public Toy createToy(String type){
